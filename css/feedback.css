@@ -1,0 +1,83 @@
+.logo-container {
+    display: flex;
+    justify-content: center; 
+    margin-bottom: 20px; 
+}
+
+.title {
+    text-align: center; 
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: #343a40;
+    margin-bottom: 50px; 
+}
+
+.container {
+    max-width: 800px; 
+    margin: 0 auto; 
+    padding: 20px;
+}
+
+
+.feedback-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px; 
+}
+
+.feedback-card {
+    background-color: #ffffff; 
+    border-left: 5px solid #050505; 
+    border-radius: 20px; 
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15); 
+    padding: 30px;
+    margin-bottom: 50px;
+    position: relative;
+    transition: all 0.4s ease;
+    text-align: center; 
+}
+
+.feedback-card:hover {
+    transform: translateY(-8px) scale(1.05); 
+    box-shadow: 0 12px 36px rgba(0, 0, 0, 0.2); 
+}
+
+.feedback-text {
+    font-family: 'Georgia', serif; 
+    font-style: italic;
+    font-size: 1.2rem; 
+    color: #444; 
+    margin-bottom: 20px;
+    line-height: 1.6;
+    text-align: center; 
+}
+
+.feedback-author {
+    font-family: 'Roboto', sans-serif; 
+    font-weight: 700; 
+    font-size: 1rem;
+    color: #343a40; 
+    margin-bottom: 5px;
+    text-align: center; 
+}
+
+.feedback-date {
+    font-size: 0.85rem;
+    color: #999;
+    margin-top: 10px;
+    text-align: center; 
+}
+
+.card-body {
+    padding: 25px;
+    background-color: #f8f9fa;
+    border-radius: 0 0 12px 12px;
+    text-align: center; 
+}
+
+
+@media (max-width: 768px) {
+    .feedback-grid {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
